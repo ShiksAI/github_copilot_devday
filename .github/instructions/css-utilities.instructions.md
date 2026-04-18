@@ -41,14 +41,18 @@ This project uses custom CSS utility classes (similar to Tailwind) defined in `a
 /* Backgrounds */
 .bg-white, .bg-gray-50, .bg-gray-100
 .bg-amber-100, .bg-amber-200
-.bg-accent (primary blue: #2563eb)
-.bg-marked (light green: #dcfce7)
+.bg-accent (bright pink: #FF6B9D)
+.bg-secondary (turquoise: #4ECDC4)
+.bg-marked (bright green: #81C784)
+.bg-winning (gold: #FFD54F)
 .bg-black/50 (semi-transparent overlay)
+.bg-gradient-fun (fun gradient)
 /* Text */
 .text-white
-.text-gray-500, .text-gray-600, .text-gray-700, .text-gray-800, .text-gray-900
+.text-gray-500, .text-gray-600, .text-gray-700, .text-gray-800, .text-gray-900 (dark purple: #4A148C)
 .text-green-600, .text-green-800
 .text-amber-500, .text-amber-800, .text-amber-900
+.text-accent, .text-secondary
 ```
 
 ### Typography
@@ -63,9 +67,9 @@ This project uses custom CSS utility classes (similar to Tailwind) defined in `a
 ### Borders & Shadows
 ```css
 .border, .border-b
-.border-gray-200, .border-gray-300, .border-amber-400, .border-marked-border
-.rounded, .rounded-lg, .rounded-xl
-.shadow-sm, .shadow-xl
+.border-gray-200, .border-gray-300, .border-amber-400, .border-marked-border, .border-winning-border, .border-accent
+.rounded, .rounded-lg, .rounded-xl, .rounded-full, .rounded-2xl, .rounded-3xl
+.shadow-sm, .shadow-xl, .shadow-fun, .shadow-lg-fun
 ```
 
 ### Positioning
@@ -81,13 +85,19 @@ This project uses custom CSS utility classes (similar to Tailwind) defined in `a
 .select-none
 .wrap-break-word
 .hyphens-auto
+button:hover (scale effect)
+```
+
+### Transforms
+```css
+.transform, .scale-105, .scale-110
 ```
 
 ### Animation
 ```css
 .transition-all, .transition-colors
-.duration-150
-.animate-[bounce_0.5s_ease-out]
+.duration-150, .duration-300
+.animate-[bounce_0.5s_ease-out], .animate-pulse, .animate-confetti, .animate-sparkle, .animate-glow
 ```
 
 ## Best Practices

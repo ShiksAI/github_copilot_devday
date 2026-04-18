@@ -26,7 +26,11 @@ target-version = "py313"
 line-length = 88
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "N", "W"]
+select = ["E", "F", "I", "N", "W", "ANN", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["F841", "ANN"]  # Allow unused variables and missing annotations in tests
+"app/__init__.py" = ["F401"]  # Allow unused imports in __init__.py
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
